@@ -1,126 +1,89 @@
 
 # ----------------------------------------
-#  Numbers in Python
+# . Working with Strings
 # ----------------------------------------
 
-# Types of Numbers
-
-# 1. Integers: Whole numbers
-num1 = -3
-num2 = 0
-num3 = 100
-print("Integers:", num1, num2, num3)
-
-# 2. Floating-point numbers: Numbers with decimals
-pi = 3.14
-negative_float = -2.5
-print("Floating-point numbers:", pi, negative_float)
-
+# Strings are sequences of characters enclosed in quotes (' ' or " ")
+greeting = "Hello" # string data type
+name = "World" # string data type
 
 # ----------------------------------------
-# Basic Arithmetic Operations
+# Basic String Operations
 # ----------------------------------------
 
-# Addition
-add_result = 2 + 3
-print("Addition (2 + 3):", add_result)  # 5
-
-# Subtraction
-sub_result = 5 - 2
-print("Subtraction (5 - 2):", sub_result)  # 3
-
-# Multiplication
-mul_result = 4 * 3
-print("Multiplication (4 * 3):", mul_result)  # 12
-
-# Division
-div_result = 10 / 2
-print("Division (10 / 2):", div_result)  # 5.0
-
-# Floor Division (discard decimal part)
-floor_div_result = 7 // 2
-print("Floor Division (7 // 2):", floor_div_result)  # 3
-
-# Modulo (remainder of division)
-mod_result = 7 % 2
-print("Modulo (7 % 2):", mod_result)  # 1
-
-# Exponentiation (power)
-exp_result = 2 ** 3
-print("Exponentiation (2 ** 3):", exp_result)  # 8
-
-
-# Example combining them all:
-a = 9
-b = 4
-print("\nExample Calculations:")
-print(f"{a} + {b} = {a + b}")
-print(f"{a} - {b} = {a - b}")
-print(f"{a} * {b} = {a * b}")
-print(f"{a} / {b} = {a / b}")
-print(f"{a} // {b} = {a // b}")
-print(f"{a} % {b} = {a % b}")
-print(f"{a} ** {b} = {a ** b}")
-
-# more notes on numbers below
-# ----------------------------------------
-# Arithmetic Operations and Math Functions in Python
-# ----------------------------------------
-
-x = 1
-y = 2
-z = 3
-
-# PEMDAS Order of Operations Example
-result = (x + y) * z - (y / x)
-print(f"Result: {result}")
+# 1. Concatenation: Combining strings using the + operator
+message = greeting + " " + name
+print("Concatenated String:", message)  # Output: Hello World
 
 # ----------------------------------------
-# Basic Arithmetic Operations
+# 2. String Functions
 # ----------------------------------------
 
-# Division
-print(f"Division: {y / x}")
+phrase = "Python is FUN!"
+name = "Giovanni"
+phrase2 = "SUPERCAGEFRAGUSLISTCIOUS"
 
-# Addition
-print(f"Addition: {x + y}")
+# # Convert all characters to lowercase
+print("Lowercase:", phrase.lower())  # Output: python is fun!
+print("Name Lowercase:", name.lower())  # Output: Giovanni 
+print(" Pharse2 Lowercase:", phrase2.lower())  # Output: SUPERCAGEFRAGUSLISTCIOUS 
 
-# Multiplication
-print(f"Multiplication: {(x + y) * z}")
+# # Convert all characters to uppercase
+print("Uppercase:", phrase.upper())  # Output: PYTHON IS FUN!
+print("Name Uppercase:", name.upper())  # Output: GIOVANNI 
+print(" Pharse2 Uppercase:", phrase2.upper())  # Output: SUPERCAGEFRAGUSLISTCIOUS 
 
-# Subtraction
-print(f"Subtraction: {(x + y) * z - (y / x)}")
+# # Check if all characters are uppercase
+print("Is Uppercase?", phrase.isupper())  # Output: False
+print("Is Uppercase?", name.isupper())  # Output: False
 
-# Modulo (remainder)
-print(f"Modulo: {y % x}")  # The remainder of y divided by x
+# # Find the length of the string
+# print("Length of phrase:", len(phrase))  # Output: 14
 
-# Power (exponentiation)
-print(f"Power: {x ** y}")
+# # ----------------------------------------
+# # 3. Indexing and Slicing
+# # ----------------------------------------
 
-# Absolute Value
-print(f"Absolute Value: {abs(x - y)}")
+# # Indexing: Access characters by position (0-based index)
+# print("First character:", phrase[0])  # Output: P
+# print("Last character:", phrase[-1])  # Output: !
 
-# Max and Min
-print(f"Max: {max(x, y, z)}")
-print(f"Min: {min(x, y, z)}")
+# # Slicing: Get a range of characters (start inclusive, end exclusive)
+# print("Characters 1 to 4:", phrase[1:4])  # Output: yth
 
-# ----------------------------------------
-# Math Library Functions
-# ----------------------------------------
-
-# Rounding a number
-pi = 3.1415926535
-print(f"Round: {round(pi)}")
-
-# Importing math functions
-from math import *
-
-print(f"Square Root of 16: {sqrt(16)}")
-print(f"Ceiling of Pi: {ceil(pi)}")
-print(f"Floor of Pi: {floor(pi)}")
+# # Example combining everything:
+# print("Formatted Example:", (greeting + " " + name + "!").upper())
+# # Output: HELLO WORLD!
 
 
+# # ----------------------------------------
+# # 7. Strings: Advanced Concepts
+# # ----------------------------------------
 
+# # Creating Strings: use single or double quotes
+# greeting1 = 'Hello'
+# greeting2 = "Hi there"
 
+# # Printing Strings
+# print(greeting1)
+# print(greeting2)
 
+# # ----------------------------------------
+# # String Methods
+# # ----------------------------------------
 
+# sentence = "Python is fun to learn"
+
+# # .split(): Splits the string into a list of words
+# words = sentence.split()
+# print("Split result:", words)
+
+# # .format(): Allows inserting values into strings using {}
+# name = "Marvin"
+# age = 35
+# intro = "My name is {} and I am {} years old.".format(name, age)
+# print(intro)
+
+# # You can also use f-strings (Python 3.6+)
+# intro_fstring = f"My name is {name} and I am {age} years old."
+# print(intro_fstring)
