@@ -1,82 +1,66 @@
+# Algorithm: A step-by-step set of instructions designed to perform a specific task.
+# Example Algorithm: Find the sum of two numbers
 
-# ----------------------------------------
-# . Working with Strings
-# ----------------------------------------
+# Step 1: Start
+# Step 2: Define two numbers
+# Step 3: Add them together
+# Step 4: Display the result
+# Step 5: End
 
-# Strings are sequences of characters enclosed in quotes (' ' or " ")
-greeting = "Hello"
-name = "World"
-
-# ----------------------------------------
-# Basic String Operations
-# ----------------------------------------
-
-# 1. Concatenation: Combining strings using the + operator
-message = greeting + " " + name
-print("Concatenated String:", message)  # Output: Hello World
-
-# ----------------------------------------
-# 2. String Functions
-# ----------------------------------------
-
-phrase = "Python is FUN!"
-
-# Convert all characters to lowercase
-print("Lowercase:", phrase.lower())  # Output: python is fun!
-
-# Convert all characters to uppercase
-print("Uppercase:", phrase.upper())  # Output: PYTHON IS FUN!
-
-# Check if all characters are uppercase
-print("Is Uppercase?", phrase.isupper())  # Output: False
-
-# Find the length of the string
-print("Length of phrase:", len(phrase))  # Output: 14
-
-# ----------------------------------------
-# 3. Indexing and Slicing
-# ----------------------------------------
-
-# Indexing: Access characters by position (0-based index)
-print("First character:", phrase[0])  # Output: P
-print("Last character:", phrase[-1])  # Output: !
-
-# Slicing: Get a range of characters (start inclusive, end exclusive)
-print("Characters 1 to 4:", phrase[1:4])  # Output: yth
-
-# Example combining everything:
-print("Formatted Example:", (greeting + " " + name + "!").upper())
-# Output: HELLO WORLD!
+# Let's write that algorithm in Python code:
+num1 = 5 #integer data type
+num2 = 7 #integer data type
+sum_result = num1 + num2
+print("The sum is:", sum_result)
 
 
-# ----------------------------------------
-# 7. Strings: Advanced Concepts
-# ----------------------------------------
+# # ----------------------------------------
+# # Variables and Data Types
+# # ----------------------------------------
 
-# Creating Strings: use single or double quotes
-greeting1 = 'Hello'
-greeting2 = "Hi there"
+# # Variables: Containers for storing data values
+# # Variables can hold different types of data
 
-# Printing Strings
-print(greeting1)
-print(greeting2)
+# # Common Data Types in Python:
 
-# ----------------------------------------
-# String Methods
-# ----------------------------------------
+# # 1. Strings: Text data enclosed in quotes
+name = "John"
+print("Name:", name)
 
-sentence = "Python is fun to learn"
+# # 2. Numbers: Numeric data (integers or floats)
+age = 23
+print("Age:", age)
 
-# .split(): Splits the string into a list of words
-words = sentence.split()
-print("Split result:", words)
+# # 3. Booleans: True or False values
+hungry = False
+print("Hungry:", hungry)
 
-# .format(): Allows inserting values into strings using {}
-name = "Marvin"
-age = 35
-intro = "My name is {} and I am {} years old.".format(name, age)
-print(intro)
 
-# You can also use f-strings (Python 3.6+)
-intro_fstring = f"My name is {name} and I am {age} years old."
-print(intro_fstring)
+# # Example combining them all:
+print(f"{name} is {age} years old. Hungry? {hungry}")
+
+
+# # ----------------------------------------
+# # Variable Naming Rules
+# # ----------------------------------------
+
+# # 1. Names cannot start with a number
+# # Example (INVALID): 1name = "John" ❌
+# # Example (VALID):
+# name1 = "John"
+
+# # 2. No spaces — use underscores instead
+# # Example (INVALID): first name = "John" ❌
+# # Example (VALID):
+# first_name = "John"
+
+# # 3. Avoid using Python keywords and symbols
+# # Example (INVALID): for = "test" ❌ (since 'for' is a Python keyword)
+#cannot use class, def, return, for, etc. 
+# # Example (VALID):
+# loop_word = "test"
+
+# print("Variable naming rules followed successfully!\n")
+# # ----------------------------------------
+
+# # End of 1_variables_and_datatypes.py
