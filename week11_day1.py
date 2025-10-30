@@ -13,4 +13,4 @@ print(first_name.upper())
 # 2. Print how many letters are in your name
 print(len(first_name))
 # 3. Combine your name and favorite color into one message
-print(" my name is:"+ first_name ) + (" and my fovorite color is:"+ favorite_color)
+print(f:{name}) and {}")
