@@ -25,8 +25,11 @@ print(num3 +num4) # output 54
 
 #  Step 4: User Input Practice
 # Ask the user two questions and combine answers
+print("how many dogs do you have?")
+print("how was your day?")
 
-
+day= "good"
+number_dog="1"
 
 
 # ⚙️ Step 5: Final Challenge (combine it all)
