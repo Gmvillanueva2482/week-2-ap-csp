@@ -57,13 +57,36 @@ chicago_mayor="Johnson"
 #index slicing
 print(chicago_mayor[0])
 #get the last letter
-#get the "s" in the string
 print(chicago_mayor[-1])
+#get the "s" in the string
+print(chicago_mayor[4])
+#slicing
+#get the "son" from the start
+print(chicago_mayor[ 4:-1 ])
+#the first number is slicing is inclusing
+#the second nukmber is exclusive 
+# get the string"John"
+print(chicago_mayor[0:4])
+print(chicago_mayor[0:-3])
+#get "ohns"
+print(chicago_mayor[1:-2])
+# when we get one character/letter
+#its called string indexing
+#when we get a chunk of letters
+#from a string, its called
+#string slicing
 
 
-
-
-
+phrase3 ="Supercagifragilstic"
+#upper case it
+print(" Pharse3 Uppercase:", phrase2.upper())
+# slice super out of it into a different variable
+cut= phrase3 [0:5]
+print(cut)
+#slice cagi out of phase4 into its own variable 
+cut2=phrase3 [5:9]
+print(cut2)
+#print out the last letter
 
 
 
