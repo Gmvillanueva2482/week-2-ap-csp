@@ -1,66 +1,128 @@
-# Algorithm: A step-by-step set of instructions designed to perform a specific task.
-# Example Algorithm: Find the sum of two numbers
+#Working with Strings
+# ----------------------------------------
 
-# Step 1: Start
-# Step 2: Define two numbers
-# Step 3: Add them together
-# Step 4: Display the result
-# Step 5: End
 
-# Let's write that algorithm in Python code:
-num1 = 5 #integer data type
-num2 = 7 #integer data type
-sum_result = num1 + num2
-print("The sum is:", sum_result)
+# Strings are sequences of characters enclosed in quotes (' ' or " ")
+greeting = "Hello" # string data type
+name = "World" # string data type
+
+
+# ----------------------------------------
+# Basic String Operations
+# ----------------------------------------
+
+
+# 1. Concatenation: Combining strings using the + operator
+message = greeting + " " + name
+print("Concatenated String:", message)  # Output: Hello World
+
+
+# ----------------------------------------
+# 2. String Functions
+# ----------------------------------------
+
+
+phrase = "Python is FUN!"
+name = "Giovanni"
+phrase2 = "SUPERCAGEFRAGUSLISTCIOUS"
+
+
+# # Convert all characters to lowercase
+print("Lowercase:", phrase.lower())  # Output: python is fun!
+print("Name Lowercase:", name.lower())  # Output: Giovanni
+print(" Pharse2 Lowercase:", phrase2.lower())  # Output: SUPERCAGEFRAGUSLISTCIOUS
+
+
+# # Convert all characters to uppercase
+print("Uppercase:", phrase.upper())  # Output: PYTHON IS FUN!
+print("Name Uppercase:", name.upper())  # Output: GIOVANNI
+print(" Pharse2 Uppercase:", phrase2.upper())  # Output: SUPERCAGEFRAGUSLISTCIOUS
+
+
+# # Check if all characters are uppercase
+print("Is Uppercase?", phrase.isupper())  # Output: False
+print("Is Uppercase?", name.isupper())  # Output: False
+
+
+# # Find the length of the string
+# print("Length of phrase:", len(phrase))  # Output: 14
 
 
 # # ----------------------------------------
-# # Variables and Data Types
+# # 3. Indexing and Slicing
+# # ----------------------------------------
+declaration_of_independence="The Declaration of Independence is the 1776 document that announced the Thirteen Colonies' separation from Great Britain, establishing them as free and independent states Written primarily by Thomas Jefferson, it outlines the reasons for separation based on Enlightenment principles and lists grievances against the British Crown, with the main message being that all men are created equal and endowed with rights to life, liberty, and the pursuit of happiness. The document was adopted by the Second Continental Congress on July 4, 1776, and its original parchment is now housed in Washington, D.C.  "
+print(len(declaration_of_independence))
+chicago_mayor="Johnson"
+#index slicing
+print(chicago_mayor[0])
+#get the last letter
+#get the "s" in the string
+print(chicago_mayor[-1])
+
+
+
+
+
+
+
+
+
+
+
+
+# # Indexing: Access characters by position (0-based index)
+# print("First character:", phrase[0])  # Output: P
+# print("Last character:", phrase[-1])  # Output: !
+
+
+# # Slicing: Get a range of characters (start inclusive, end exclusive)
+# print("Characters 1 to 4:", phrase[1:4])  # Output: yth
+
+
+# # Example combining everything:
+# print("Formatted Example:", (greeting + " " + name + "!").upper())
+# # Output: HELLO WORLD!
+
+
+
+
+# # ----------------------------------------
+# # 7. Strings: Advanced Concepts
 # # ----------------------------------------
 
-# # Variables: Containers for storing data values
-# # Variables can hold different types of data
 
-# # Common Data Types in Python:
-
-# # 1. Strings: Text data enclosed in quotes
-name = "John"
-print("Name:", name)
-
-# # 2. Numbers: Numeric data (integers or floats)
-age = 23
-print("Age:", age)
-
-# # 3. Booleans: True or False values
-hungry = False
-print("Hungry:", hungry)
+# # Creating Strings: use single or double quotes
+# greeting1 = 'Hello'
+# greeting2 = "Hi there"
 
 
-# # Example combining them all:
-print(f"{name} is {age} years old. Hungry? {hungry}")
+# # Printing Strings
+# print(greeting1)
+# print(greeting2)
 
 
 # # ----------------------------------------
-# # Variable Naming Rules
+# # String Methods
 # # ----------------------------------------
 
-# # 1. Names cannot start with a number
-# # Example (INVALID): 1name = "John" ❌
-# # Example (VALID):
-# name1 = "John"
 
-# # 2. No spaces — use underscores instead
-# # Example (INVALID): first name = "John" ❌
-# # Example (VALID):
-# first_name = "John"
+# sentence = "Python is fun to learn"
 
-# # 3. Avoid using Python keywords and symbols
-# # Example (INVALID): for = "test" ❌ (since 'for' is a Python keyword)
-#cannot use class, def, return, for, etc. 
-# # Example (VALID):
-# loop_word = "test"
 
-# print("Variable naming rules followed successfully!\n")
-# # ----------------------------------------
+# # .split(): Splits the string into a list of words
+# words = sentence.split()
+# print("Split result:", words)
 
-# # End of 1_variables_and_datatypes.py
+
+# # .format(): Allows inserting values into strings using {}
+# name = "Marvin"
+# age = 35
+# intro = "My name is {} and I am {} years old.".format(name, age)
+# print(intro)
+
+
+# # You can also use f-strings (Python 3.6+)
+# intro_fstring = f"My name is {name} and I am {age} years old."
+# print(intro_fstring)
+
