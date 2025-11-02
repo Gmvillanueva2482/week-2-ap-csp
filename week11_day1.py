@@ -13,7 +13,7 @@ print(first_name.upper())
 # 2. Print how many letters are in your name
 print(len(first_name))
 # 3. Combine your name and favorite color into one message
-print("my name is" b:{first_name}) and {favorite_color}")
+print(f"My name is {first_name} and my favorite color is {favorite_color}.")
 #  Step 3: Math Practice
 # Use arithmetic operators with your favorite number
 num1=3
@@ -25,14 +25,11 @@ print(num3 +num4) # output 54
 
 #  Step 4: User Input Practice
 # Ask the user two questions and combine answers
-print("how many dogs do you have?")
-print("how was your day?")
+number_dog = input("How many dogs do you have? ") 
+day = input("How was your day? ")
 
-day= "good"
-number_dog="1"
-
+print("You have " + number_dog + " dog(s), and your day was " + day + ".")
 
 # ⚙️ Step 5: Final Challenge (combine it all)
 # Use math and strings together
 
-print(f:{name}) and {}")
