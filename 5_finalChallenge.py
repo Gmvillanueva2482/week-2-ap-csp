@@ -17,3 +17,15 @@
 # Well, try to do it on your own, and if it gets complicated, don’t worry, we will solve it together in the next lecture.
 
 # Cheers and good luck.
+
+print("Welcome to the Beer Name Generator!")
+print("------------------------------------")
+
+
+element = input("Name a natural element (like fire, water, wind): ")
+creature = input("Name a powerful animal: ")
+
+beer_name = element.capitalize() + " " + creature.capitalize()
+
+print(f'\nYour new craft beer name could be "{beer_name}"!')
+print("Cheers to originality and good taste!")
