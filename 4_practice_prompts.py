@@ -34,10 +34,13 @@ print(f"In front of me, I have a {Object_1}, a {Object_2}, and a {Object_3}.")
 # Print today's date.
 print (" November 3, 2025")
 # Print the name of your favorite movie.
-
+print ("Barbarin")
 # Print your name and age on separate lines using a single print() function.
+print("Giovanni\n16")
 # Use f-strings to print a message like: "In 10 years, [Your Name] will be [Your Age + 10] years old."
-
+name = "Giovanni"
+age = 16
+print(f"In 10 years, {name} will be {age + 10} years old.")
 ##############################################################################################################
 
 ###########################String Practice##################################
