@@ -1,89 +1,150 @@
 
-# ----------------------------------------
-# . Working with Strings
-# ----------------------------------------
-
-# Strings are sequences of characters enclosed in quotes (' ' or " ")
-greeting = "Hello" # string data type
-name = "World" # string data type
 
 # ----------------------------------------
-# Basic String Operations
+#  Numbers in Python
 # ----------------------------------------
 
-# 1. Concatenation: Combining strings using the + operator
-message = greeting + " " + name
-print("Concatenated String:", message)  # Output: Hello World
+# Types of Numbers
+
+# 1. Integers: Whole numbers
+num1 = -3
+num2 = 0
+num3 = 100
+print("Integers:", num1, num2, num3)
+print(num1 + num2 + num3)
+print(num1 + num2 - num3)
+
+# 2. Floating-point numbers: Numbers with decimals
+pi = 3.14
+negative_float = -2.5
+print("Floating-point numbers:", pi, negative_float)
+
 
 # ----------------------------------------
-# 2. String Functions
+# Basic Arithmetic Operations
 # ----------------------------------------
 
-phrase = "Python is FUN!"
-name = "Giovanni"
-phrase2 = "SUPERCAGEFRAGUSLISTCIOUS"
+# Addition
+add_result = 2 + 3
+print("Addition (2 + 3):", add_result)  # 5
+num1 = 4
+num2 = 9
+print(num1 + num2)
 
-# # Convert all characters to lowercase
-print("Lowercase:", phrase.lower())  # Output: python is fun!
-print("Name Lowercase:", name.lower())  # Output: Giovanni 
-print(" Pharse2 Lowercase:", phrase2.lower())  # Output: SUPERCAGEFRAGUSLISTCIOUS 
+# Subtraction
+sub_result = 5 - 2
+print("Subtraction (5 - 2):", sub_result)  # 3
+num1 = 9
+num2 = 8
+print(num1 - num2)
 
-# # Convert all characters to uppercase
-print("Uppercase:", phrase.upper())  # Output: PYTHON IS FUN!
-print("Name Uppercase:", name.upper())  # Output: GIOVANNI 
-print(" Pharse2 Uppercase:", phrase2.upper())  # Output: SUPERCAGEFRAGUSLISTCIOUS 
+# Multiplication
+mul_result = 4 * 3
+print("Multiplication (4 * 3):", mul_result)  # 12
+num1 = 9
+num2 = 8
+print(num1 * num2)
 
-# # Check if all characters are uppercase
-print("Is Uppercase?", phrase.isupper())  # Output: False
-print("Is Uppercase?", name.isupper())  # Output: False
-
-# # Find the length of the string
-# print("Length of phrase:", len(phrase))  # Output: 14
-
-# # ----------------------------------------
-# # 3. Indexing and Slicing
-# # ----------------------------------------
-
-# # Indexing: Access characters by position (0-based index)
-# print("First character:", phrase[0])  # Output: P
-# print("Last character:", phrase[-1])  # Output: !
-
-# # Slicing: Get a range of characters (start inclusive, end exclusive)
-# print("Characters 1 to 4:", phrase[1:4])  # Output: yth
-
-# # Example combining everything:
-# print("Formatted Example:", (greeting + " " + name + "!").upper())
-# # Output: HELLO WORLD!
+# Division
+div_result = 10 / 2
+print("Division (10 / 2):", div_result)  # 5.0
+num1 = 9
+num2 = 8
+print(num1 / num2)
 
 
-# # ----------------------------------------
-# # 7. Strings: Advanced Concepts
-# # ----------------------------------------
+# Floor Division (discard decimal part)
 
-# # Creating Strings: use single or double quotes
-# greeting1 = 'Hello'
-# greeting2 = "Hi there"
+floor_div_result = 7 // 2
+print("Floor Division (7 // 2):", floor_div_result)  # 3
+num1 = 9
+num2 = 8
+print(num1 // num2)
 
-# # Printing Strings
-# print(greeting1)
-# print(greeting2)
 
-# # ----------------------------------------
-# # String Methods
-# # ----------------------------------------
+# Modulo (remainder of division)
+mod_result = 7 % 2
+print("Modulo (7 % 2):", mod_result)  # 1
+num1 = 9
+num2 = 8
+print(num1 % num2)
 
-# sentence = "Python is fun to learn"
 
-# # .split(): Splits the string into a list of words
-# words = sentence.split()
-# print("Split result:", words)
+# Exponentiation (power)
+exp_result = 2 ** 3
+print("Exponentiation (2 ** 3):", exp_result)  # 8
+num1 = 9
+num2 = 8
+print(num1 ** num2)
+# git add .
+# git commit -m "learning math "
+# git push origin 
 
-# # .format(): Allows inserting values into strings using {}
-# name = "Marvin"
-# age = 35
-# intro = "My name is {} and I am {} years old.".format(name, age)
-# print(intro)
+# Example combining them all:
+a = 9
+b = 4
+print("\nExample Calculations:")
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} ** {b} = {a ** b}")
 
-# # You can also use f-strings (Python 3.6+)
-# intro_fstring = f"My name is {name} and I am {age} years old."
-# print(intro_fstring)
+# more notes on numbers below
+# ----------------------------------------
+# Arithmetic Operations and Math Functions in Python
+# ----------------------------------------
+
+x = 1
+y = 2
+z = 3
+
+# PEMDAS Order of Operations Example
+result = (x + y) * z - (y / x)
+print(f"Result: {result}")
+
+# ----------------------------------------
+# Basic Arithmetic Operations
+# ----------------------------------------
+
+# Division
+print(f"Division: {y / x}")
+
+# Addition
+print(f"Addition: {x + y}")
+
+# Multiplication
+print(f"Multiplication: {(x + y) * z}")
+
+# Subtraction
+print(f"Subtraction: {(x + y) * z - (y / x)}")
+
+# Modulo (remainder)
+print(f"Modulo: {y % x}")  # The remainder of y divided by x
+
+# Power (exponentiation)
+print(f"Power: {x ** y}")
+
+# Absolute Value
+print(f"Absolute Value: {abs(x - y)}")
+
+# Max and Min
+print(f"Max: {max(x, y, z)}")
+print(f"Min: {min(x, y, z)}")
+
+# ----------------------------------------
+# Math Library Functions
+# ----------------------------------------
+
+# Rounding a number
+pi = 3.1415926535
+print(f"Round: {round(pi)}")
+
+# Importing math functions
+from math import *
+
+print(f"Square Root of 16: {sqrt(16)}")
+print(f"Ceiling of Pi: {ceil(pi)}")
+print(f"Floor of Pi: {floor(pi)}")
