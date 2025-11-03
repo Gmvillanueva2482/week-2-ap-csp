@@ -74,20 +74,26 @@ print (" November 3, 2025")
 # Write Python code that allows the user to enter their answer, by making them the following question:
 # What are you learning today?
 # Your code must be able to print to the screen whatever is entered by the user (use the print function).
-
+print("You are learning:", learning_topic)
 # Input Practice #2
 # Write Python code that allows the user to enter their answer, by making them the following question:
 # Where are you from?
 # Your code must be able to print to the screen whatever is entered by the user (use the print function).
-
+location = input("Where are you from? ")
+print("You are from:", location)
 # Input Practice #3
 # Write Python code that displays the user's full name on the screen, by allowing them to enter their first and last name with the following instructions:
 # What is your name?
 # What is your surname?
 # The code must be able to print the user's first and last name on the screen, separated by a space.
-
+first_name = input("What is your name? ")
+lats_name = input("What is your surname? ")
+print("Your full name is:", first_name, last_name)
 # Exercise:
 # Write a program that asks the user for their name and favorite color, then prints a message using both pieces of information.
+name = input("What is your name? ")
+color = input("What is your favorite color? ")
+print(name + ", your favorite color is " + color + "!")
 
 
 
