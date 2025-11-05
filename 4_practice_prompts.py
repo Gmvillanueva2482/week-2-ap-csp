@@ -58,17 +58,28 @@ name = "John"
 # find a summary of the movie blue beetle online and create a 
 # variable called blue_beetle_summary and print it it out to the screen
 blue_beetle_summary = "Recent college grad Jaime Reyes returns home to his family in Palmera City only to discover they’re facing eviction. When an alien bio-artifact called the Scarab selects Jaime as its symbiotic host, he is gifted a powerful suit of armor and extraordinary abilities that change his destiny as the superhero Blue Beetle."  
-print(blue_beetle_summary)  
 
 # print the length of the summary
+print(len(blue_beetle_summary)) 
 # upper case the entire summary
+print(blue_beetle_summary.upper())  
 # print the summary
+
 # print the summary in lowercase
+print(blue_beetle_summary.lower())  
 # replace the word blue with red
+modified = blue_beetle_summary.replace("Blue", "Red")  
+print(modified)  
 # print the summary
+
 # string index the word beetle and print it out
+index = blue_beetle_summary.lower().find("beetle")
 # print the last word of the summary
+words = blue_beetle_summary.split()  
+print("Last word:", words[-1])  
 # print the summary in reverse
+print(blue_beetle_summary[::-1])  
+
 
 
 ##########################input practice#############################################
