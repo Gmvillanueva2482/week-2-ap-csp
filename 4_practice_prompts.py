@@ -45,8 +45,8 @@ print(f"In 10 years, {name} will be {age + 10} years old.")
 
 ###########################String Practice##################################
 #syntax is the way we write code
-# print("Hello World")
-# name = "John"
+print("Hello World")
+name = "John"
 #in other languages, this is different
 # in javascript for example, you define
 #variables with let or const or var
@@ -57,6 +57,8 @@ print(f"In 10 years, {name} will be {age + 10} years old.")
 #challenge
 # find a summary of the movie blue beetle online and create a 
 # variable called blue_beetle_summary and print it it out to the screen
+blue_beetle_summary = "Recent college grad Jaime Reyes returns home to his family in Palmera City only to discover they’re facing eviction. When an alien bio-artifact called the Scarab selects Jaime as its symbiotic host, he is gifted a powerful suit of armor and extraordinary abilities that change his destiny as the superhero Blue Beetle."  
+print(blue_beetle_summary)  
 
 # print the length of the summary
 # upper case the entire summary
